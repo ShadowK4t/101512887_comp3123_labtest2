@@ -43,8 +43,8 @@ Example API call (metric): https://api.openweathermap.org/data/2.5/weather?q=Tor
 ## How to run
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<yourGithubUser>/<studentId>_comp3123_labtest2.git
-cd <studentId>_comp3123_labtest2
+git clone https://github.com/ShadowK4t/101512887_comp3123_labtest2.git
+cd 101512887_comp3123_labtest2
 
 npm install
 
