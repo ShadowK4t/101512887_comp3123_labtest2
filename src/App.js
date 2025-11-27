@@ -51,23 +51,24 @@ function App() {
   };
 
   return (
-    <div>
-      <header>
+    <div className="app">
+      <div className="background-layer" />
+      <header className="app-header">
         <h1>
           Weather Forecast
         </h1>
-        <p>Search any city.</p>
+        <p className="subtitle">Search any city.</p>
       </header>
 
-      <div>
+      <div className="unit-toggle">
         <button className={units === "metric" ? "active" : ""}
           onClick={() => setUnits("metric")}>°C</button>
         <button className={units === "imperial" ? "active" : ""}
           onClick={() => setUnits("imperial")}>°F</button>
       </div>
 
-      <main>
-        <form onSubmit={handleSubmit}>
+      <main className="content">
+        <form className="search-bar" onSubmit={handleSubmit}>
           <input type="text" placeholder="Enter city name"
             value={query} onChange={(e) => setQuery(e.target.value)}
           />
